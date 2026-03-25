@@ -3,7 +3,7 @@
 # Maintainer: Aaron Bassett <abassett@qnx.com>
 pkgname=vala
 pkgver=0.56.18
-pkgrel=${pkgrel:-0}
+pkgrel=1
 pkgdesc="Compiler for the GObject type system"
 url="https://vala.dev"
 arch="all"
@@ -37,7 +37,6 @@ package() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 7ba820942ac40b54a62cbcd8a1d94d5add022b4a2c69e1276fc9fca38361d5878f3f852d270e0a5ef4bca6bd2df3a65f14b410c600b82a46da4123c90a3107e7  vala-0.56.18.tar.xz
 73cf054b86d899c5437860d0c6c59956892c9bbbb10b59b638c01985f4e9efa6b720fc0bec007fd3aabd20aadbba8477bd0b4067f950df60fb979410a74c0989  0001-posix-Define-_XOPEN_SOURCE-_GNU_SOURCE-for-signal-fu.patch
